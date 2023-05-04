@@ -33,6 +33,9 @@
             <div class="form-group">
                 <input type="date" class="form-control mt-2" id="end-date" name="end" placeholder="End date">
             </div>
+            <div class="form-group">
+                <input type="text" class="form-control mt-2" id="members" name="members" placeholder="Members">
+            </div>
             <button type="submit" class="btn btn-success mt-2 w-100 justify-center">Add</button>
           </form>
     </div>
@@ -46,6 +49,7 @@
                     <th scope="col">Price</th>
                     <th scope="col">Jobs done</th>
                     <th scope="col">Start date</th>
+                    <th scope="col">Members</th>
                     <th scope="col">End date</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Details</th>
@@ -60,6 +64,7 @@
                     <td><%= projects[i].price %></td>
                     <td><%= projects[i].jobs %></td>
                     <td><%= projects[i].start %></td>
+                    <td><%= projects[i].members %></td>
                     <td><%= projects[i].end %></td>
                     <td><button type="button" class="btn btn-primary edit-button"><a class="text-white text-decoration-none" href="/projects/edit/<%= projects[i]._id %>">Edit</a></button></td>
                     <td><button type="button" class="btn btn-primary"><a class="text-white text-decoration-none" href="/projects/details/<%= projects[i]._id %>">Details</a></button></td>

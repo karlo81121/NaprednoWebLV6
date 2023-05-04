@@ -75,6 +75,7 @@ MongoClient.connect(connString, { useUnifiedTopology: true })
             jobs: req.body.jobs,
             start: req.body.start,
             end: req.body.end,
+            members: req.body.members
           }
         })
         .then(() => {
